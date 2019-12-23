@@ -1,5 +1,3 @@
-Code for the paper "Dimensionality reduction for longitudinal multivariate data by optimizing class separation of projected latent Markov models" 
-
 This project reports R code for implementing the methods in the paper "Dimensionality reduction for longitudinal multivariate data by optimizing class separation of projected latent Markov models".
 
 The following libraries shall be installed in R before using code from
