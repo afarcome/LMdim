@@ -41,7 +41,7 @@ wt=qr.Q(qr(wt),complete=FALSE)
 outerLik(wt[,nc],Y,Ti,k,innerTol)
 }
 
-LMdimCat=function(Y,k,nproj=1,outerTol=1e-3,innerTol=1e-3,w0=NULL,alg="opt",inits="logisticSVD") {
+LMdim=function(Y,k,nproj=1,outerTol=1e-3,innerTol=1e-3,w0=NULL,alg="opt",inits="logisticSVD") {
   
 H=dim(Y)[3]
 n=dim(Y)[1]

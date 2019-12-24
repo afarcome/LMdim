@@ -15,11 +15,10 @@ library(GA)
 
 library(logisticPCA)
 
-The main function for implementation is called LMdimCat, and it implements the methodology for a binary multivarate outcome.  
-
+The main function for implementation is called LMdim.
 The function takes in input: 
 
-  Y,                 # binary array n (subjects) by Ti (times) by H (items)
+  Y,                 # array n (subjects) by Ti (times) by H (items)
 
   k,                 # number of mixture components
 
@@ -36,7 +35,8 @@ The function takes in input:
 
   alg                # algorithm for outer optimization: "opt" for optim, "GA" for genetic (defaults "opt")
 
-  inits              # algorithm for starting solution: "logisticSVD", "logisticPCA", "random" (defaults "logisticSVD") 
+  inits              # algorithm for starting solution: "logisticSVD", "logisticPCA", "random" (defaults "logisticSVD")
+                     # logisticSVD and logisticPCA are restricted to binary Y 
 
 and gives in output, if nproj<1, a list with elements:
 
